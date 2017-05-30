@@ -2,8 +2,8 @@ title: Портфолио Орлова Валентина
 email: orlovv@herzen.spb.ru
 description: >
   description
-baseurl: ""
-url: ""
+baseurl: "/portfolio"
+url: "/portfolio"
 github_username:  xunto
 
 # Build settings
