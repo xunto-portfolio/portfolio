@@ -1,0 +1,8 @@
+---
+layout: post
+title: "Программа для построения аналитических таблиц \"Anna\""
+date: 2016-12-23 00:00:53 +0300
+---
+
+Github: {% include icon-github.html username="xunto" %} /
+[Anna](https://github.com/xunto/Anna)
