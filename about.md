@@ -8,7 +8,7 @@ permalink: /about/
 
 Они включают в себя отправку изменений в коде в репозиторий (commit), баг репорты и обсуждения на тему качества кода или функций программ (issue).
 
-![Git statistics](/assets/git_stats.png)
+![Git statistics]({{ site.url }}/assets/git_stats.png)
 
 За это время только на гитхаб я имел 498 contribution в разные опенсорс проекты.
 
