@@ -6,3 +6,41 @@ date: 2016-12-23 00:00:53 +0300
 
 Github: {% include icon-github.html username="xunto" %} /
 [Anna](https://github.com/xunto/Anna)
+
+{% highlight bash %}
+python console.py "((A->B)->((A->(B->C))->(A->C)))<->A" > result.html
+{% endhighlight %}
+
+## Отображение в браузере
+![Скриншот вывода]({{ site.url }}/assets/anna.png)
+
+## HTML:
+{% highlight html %}
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+    .scope {
+        display: table-cell;
+
+        white-space: nowrap;
+
+        padding-right: 5px;
+        border-top: solid 1px black;
+    }
+
+    .scope + .scope {
+        border-left: solid 1px black;
+        padding-left: 5px;
+    }
+
+</style>
+</head>
+<body>
+<code>
+<div class="scope">f(((A->B)->((A->(B->C))->(A->C)))<->A)<br/>f((((A->B)->((A->(B->C))->(A->C)))->A)&(A->((A->B)->((A->(B->C))->(A->C)))))<br/><div class="scope">f(((A->B)->((A->(B->C))->(A->C)))->A)<br/>fA<br/>t((A->B)->((A->(B->C))->(A->C)))<br/><div class="scope">f(A->B)<br/>fB<br/>tA<br/></div><div class="scope">t((A->(B->C))->(A->C))<br/><div class="scope">f(A->(B->C))<br/>f(B->C)<br/>fC<br/>tB<br/>tA<br/></div><div class="scope">t(A->C)<br/><div class="scope">fA<br/></div><div class="scope">tC<br/></div></div></div></div><div class="scope">f(A->((A->B)->((A->(B->C))->(A->C))))<br/>f((A->B)->((A->(B->C))->(A->C)))<br/>f((A->(B->C))->(A->C))<br/>f(A->C)<br/>fC<br/>tA<br/>t(A->(B->C))<br/>t(A->B)<br/>tA<br/><div class="scope">fA<br/><div class="scope">fA<br/></div><div class="scope">tB<br/></div></div><div class="scope">t(B->C)<br/><div class="scope">fB<br/><div class="scope">fA<br/></div><div class="scope">tB<br/></div></div><div class="scope">tC<br/><div class="scope">fA<br/></div><div class="scope">tB<br/></div></div></div></div></div>
+</code>
+</body>
+</html>
+{% endhighlight %}
