@@ -13,9 +13,9 @@ permalink: /about/
 За это время только на гитхаб я имел 498 contribution в разные опенсорс проекты.
 
 Самые популярные из них:
-- symfony/symfony, 14600 stars
-- minetest/minetest, 2600 stars
-- swagger-api/swagger-editor, 2400 stars
-- ponyorm/pony, 1100 stars
-- minetest/minetest_game, 491 stars
-- itdxer/4DaysORM, 29 stars
+- {% include icon-github.html username="symfony" %} / [symfony](https://github.com/symfony/symfony), 14600 stars
+- {% include icon-github.html username="minetest" %} / [minetest](https://github.com/minetest/minetest), 2600 stars
+- {% include icon-github.html username="swagger-api" %} / [swagger-editor](https://github.com/swagger-api/swagger-editor), 2400 stars
+- {% include icon-github.html username="ponyorm" %} / [pony](https://github.com/ponyorm/pony), 1100 stars
+- {% include icon-github.html username="minetest" %} / [minetest_game](https://github.com/minetest/minetest_game), 491 stars
+- {% include icon-github.html username="itdxer" %} / [4DaysORM](https://github.com/itdxer/4DaysORM), 29 stars
